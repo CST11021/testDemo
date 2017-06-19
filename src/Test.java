@@ -6,7 +6,6 @@ public class Test {
         System.out.println("Hello World!");
     }
 
-    public void test() {
-
+    public void test1() {
     }
 }
