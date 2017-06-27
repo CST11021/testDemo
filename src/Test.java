@@ -13,5 +13,11 @@ public class Test {
         System.out.print("");
         // 我在master分支下第三次添加了这行代码
         System.out.print("");
+        // 我在分支fenzhi_v1_20170626下添加了这行代码
+        System.out.print("");
+        // 我在分支fenzhi_v1_20170626下第二次添加了这行代码
+        System.out.print("");
+        // 我在分支fenzhi_v1_20170626下第三次添加了这行代码
+        System.out.print("");
     }
 }
