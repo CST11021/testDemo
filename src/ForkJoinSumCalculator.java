@@ -51,11 +51,7 @@ public class ForkJoinSumCalculator extends java.util.concurrent.RecursiveTask<Lo
         return sum;
     }
 
-
-
-
-
-
+    // 累加器
     public static long forkJoinSum(long n) {
         long[] numbers = LongStream.rangeClosed(1, n).toArray();
         ForkJoinTask<Long> task = new ForkJoinSumCalculator(numbers);
@@ -63,6 +59,7 @@ public class ForkJoinSumCalculator extends java.util.concurrent.RecursiveTask<Lo
         return new ForkJoinPool().invoke(task);
     }
 
+    // 返回方法的执行时间
     public static long measureSumPerf(Function<Long, Long> adder, long n) {
         long fastest = Long.MAX_VALUE;
         for (int i = 0; i < 10; i++) {
@@ -77,13 +74,12 @@ public class ForkJoinSumCalculator extends java.util.concurrent.RecursiveTask<Lo
 
     public static void main(String[] args) {
 
-
         System.out.println("ForkJoin sum done in: " +
                 measureSumPerf(ForkJoinSumCalculator::forkJoinSum, 10_000_000) + " msecs" );
 
-
-
     }
+
+
 
 
 }
