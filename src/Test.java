@@ -9,4 +9,9 @@ public class Test {
     public void test1() {
         // B 创建的分支
     }
+
+    public void test2() {
+        // fenzhi_1
+        // master
+    }
 }
