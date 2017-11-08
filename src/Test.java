@@ -16,6 +16,10 @@ public class Test {
     }
 
     public void test3() {
-        new Children();
+
+    }
+
+    public void test4() {
+
     }
 }
